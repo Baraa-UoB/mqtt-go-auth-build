@@ -16,8 +16,7 @@ jobs:
       - name: Install build deps
         run: |
           sudo apt-get update
-          sudo apt-get install -y git make gcc pkg-config wget ca-certificates \
-            mosquitto-dev libmosquitto-dev
+          sudo apt-get install -y git make gcc pkg-config wget ca-certificates mosquitto-dev libmosquitto-dev
 
       - name: Install Go
         run: |
@@ -39,4 +38,3 @@ jobs:
         with:
           name: go-auth-so
           path: mosquitto-go-auth/go-auth.so
-
